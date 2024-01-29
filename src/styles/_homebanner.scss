@@ -1,0 +1,36 @@
+@import "fonts";
+@import "colors";
+
+.home {
+  display: flex;
+  min-height: 900px;
+  justify-content: center;
+
+  .banner {
+    width: 50vw;
+    height: auto;
+    background-image: url("src/assets/Home-Hero-Image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% 100%;
+    z-index: -1;
+  }
+
+  .banner-description {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+
+    h1 {
+      font-family: $font-base;
+      color: $color-dark-grey;
+      font-size: 33px;
+      line-height: 55px;
+      font-weight: 300;
+    }
+  }
+}

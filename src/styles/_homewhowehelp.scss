@@ -1,0 +1,68 @@
+@import "fonts";
+@import "colors";
+
+.home_help_container {
+  margin-top: 70px;
+
+  .title_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+
+    h3 {
+      font-family: $font-base;
+      font-size: 38px;
+      font-weight: lighter;
+    }
+  }
+
+  .text_section {
+    margin-top: 80px;
+    text-align: center;
+    font-family: $font-base;
+    font-size: 22px;
+    color: $color-dark-grey;
+  }
+}
+
+.partners_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 80px;
+  gap: 60px;
+
+  .partner_item {
+    display: flex;
+    justify-content: space-between;
+    width: 70vw;
+
+    .left_column{
+      font-family: $font-base;
+      color: $color-dark-grey;
+      font-weight: lighter;
+
+      .name {
+        font-size: 26px;
+      }
+
+      .aim {
+        font-size: 18px;
+      }
+    }
+    .right_column {
+      font-family: $font-base;
+      color: $color-dark-grey;
+      text-align: right;
+      font-weight: lighter;
+      font-size: 18px;
+    }
+  }
+}
+
+
+
+
+

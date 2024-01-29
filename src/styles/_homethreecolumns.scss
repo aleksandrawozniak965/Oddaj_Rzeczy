@@ -1,0 +1,38 @@
+@import "fonts";
+@import "colors";
+
+.home_three_columns {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  background-color: $color-yellow;
+  height: 384px;
+
+  .text_container {
+
+    span {
+      font-family: $font-base;
+      font-size: 90px;
+      font-weight: lighter;
+      color: $color-brown;
+      margin-bottom: 10px;
+    }
+
+    .title {
+      font-family: $font-base;
+      color: $color-dark-grey;
+      font-size: 18px;
+      margin-bottom: 28px;
+    }
+
+    .text {
+      font-family: $font-alt;
+      font-size: 16px;
+      color: $color-dark-grey;
+      font-weight: normal;
+      line-height: 1.4;
+      max-width: 330px;
+    }
+  }
+}

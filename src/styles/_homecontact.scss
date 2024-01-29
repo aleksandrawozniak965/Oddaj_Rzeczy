@@ -1,0 +1,133 @@
+@import "fonts";
+@import "colors";
+
+.contact {
+  width: 100vw;
+  min-height: 90vh;
+  background-image: url("/src/assets/Background-Contact-Form.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 100px;
+
+  .home_contact_container {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.7);
+    z-index: 1;
+
+    form {
+      width: 45vw;
+      min-height: 90vh;
+      margin-left: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+
+      h3 {
+        font-family: $font-base;
+        color: $color-dark-grey;
+        font-size: 30px;
+        font-weight: lighter;
+      }
+    }
+  }
+}
+
+.home_contact_name_email {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 500px;
+
+  label {
+    font-family: $font-base;
+    font-size: 16px;
+    font-weight: 400;
+    min-height: 90px;
+
+    &:first-child {
+      margin-right: 20px;
+    }
+}
+
+  input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid $color-light-grey;
+    width: 220px;
+    margin-top: 20px;
+    font-size: 14px;
+    font-family: $font-alt;
+    color: $color-dark-grey;
+    font-weight: 300;
+    padding-bottom: 3px;
+    outline: none;
+
+    &::placeholder {
+      color: $color-placeholder;
+    }
+  }
+}
+
+.home_contact_msg {
+  font-size: 16px;
+  font-weight: 400;
+  width: 100%;
+  align-self: center;
+  max-width: 500px;
+  min-height: 180px;
+  font-family: $font-base;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+
+  textarea {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid $color-light-grey;
+    resize: none;
+
+    margin-top: 20px;
+    font-size: 14px;
+    font-family: $font-alt;
+    color: $color-dark-grey;
+    font-weight: 300;
+    height: 95px;
+    outline: none;
+
+    &::placeholder {
+      color: #3c3c3c3b;
+    }
+  }
+}
+
+footer {
+  max-width: 500px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+
+  a {
+    margin-top: 20px;
+    width: 30px;
+    height: 30px;
+
+    &:first-child {
+      margin-right: 20px;
+    }
+  }
+
+  img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.error {
+  color: red;
+  font-size: 0.8rem;
+  margin-top: 5px;
+}

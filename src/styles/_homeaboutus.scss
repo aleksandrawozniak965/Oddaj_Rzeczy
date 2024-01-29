@@ -1,0 +1,52 @@
+@import "fonts";
+@import "colors";
+
+.about_us_container {
+  width: 100%;
+  height: 935px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-dirty-white;
+
+  .about_us_text {
+    width: 50vw;
+    text-align: center;
+    font-family: $font-base;
+    color: $color-dark-grey;
+
+    h3 {
+      font-size: 38px;
+      font-weight: normal;
+    }
+
+    img {
+      margin-top: 32px;
+      margin-bottom: 62px;
+    }
+
+    .about_us_text {
+      font-size: 30px;
+      font-weight: lighter;
+    }
+
+    .signature_container {
+      text-align: right;
+      margin-right: 70px;
+      margin-top: 20px;
+    }
+  }
+
+  .about_us_image {
+    width: 50vw;
+    height: 935px;
+
+    .about_us_photo {
+      width: 50vw;
+      height: 100%;
+      background-image: url("src/assets/People.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+}

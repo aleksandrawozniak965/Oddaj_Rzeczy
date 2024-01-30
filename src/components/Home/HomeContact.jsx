@@ -18,7 +18,7 @@ export default function HomeContact() {
 
     const validateForm = (formData) => {
         const errors = {};
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // prosty wzorzec dla walidacji email
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
         if (!formData.name.trim()) {
             errors.name = "Imię jest wymagane.";
@@ -37,7 +37,6 @@ export default function HomeContact() {
         } else if (formData.message.length < 120) {
             errors.message = "Wiadomość musi mieć co najmniej 120 znaków.";
         }
-
         return errors;
     };
 
@@ -64,11 +63,9 @@ export default function HomeContact() {
                 } else {
                     const errorResult = await response.json();
                     console.error(errorResult);
-                    // Tutaj możesz obsłużyć błędy z serwera, np. wyświetlić je użytkownikowi
                 }
             } catch (error) {
                 console.error('Wystąpił błąd przy wysyłaniu formularza:', error);
-                // Tutaj obsługa błędów sieciowych
             }
         }
     };

@@ -34,8 +34,8 @@ export default function HomeContact() {
 
         if (!formData.message) {
             errors.message = "Wiadomość jest wymagana.";
-        } else if (formData.message.length < 120) {
-            errors.message = "Wiadomość musi mieć co najmniej 120 znaków.";
+        } else if (formData.message.length < 20) {
+            errors.message = "Wiadomość musi mieć co najmniej 20 znaków.";
         }
         return errors;
     };
@@ -121,7 +121,7 @@ export default function HomeContact() {
                                 <img src="/src/assets/Facebook.svg" alt="facebook-icon" />
                             </a>
 
-                            <a href="'https://www.instagram.com'">
+                            <a href="https://www.instagram.com">
                                 <img src="/src/assets/Instagram.svg" alt="instagram-icon" />
                             </a>
                         </footer>

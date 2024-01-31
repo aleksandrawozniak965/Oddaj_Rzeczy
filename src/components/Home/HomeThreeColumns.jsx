@@ -1,6 +1,5 @@
 export default function HomeThreeColumns() {
     return(
-        <>
         <section className="home_three_columns">
             <div className="text_container">
                 <span>10</span>
@@ -20,6 +19,5 @@ export default function HomeThreeColumns() {
                 <p className="text">Lorem ipsum dolor sit amet, consectetur adipisc Pellentesque vel enim a elit viverra elementuma. Aliquam erat volutpat.</p>
             </div>
         </section>
-        </>
     )
 }

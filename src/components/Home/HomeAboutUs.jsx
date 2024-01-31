@@ -1,6 +1,5 @@
 export default function HomeAboutUs() {
     return (
-        <>
         <section id="homeAboutUs" className="about_us_container">
             <div className="about_us_text">
                 <h3>O nas</h3>
@@ -16,6 +15,5 @@ export default function HomeAboutUs() {
                 <div className="about_us_photo"></div>
             </div>
         </section>
-        </>
     )
 }

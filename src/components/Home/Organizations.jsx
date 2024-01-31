@@ -2,10 +2,10 @@ import supabase from "../../utilis/supabase.js";
 import {useState, useEffect} from "react";
 import Pagination from "../Pagination.jsx";
 
-export default function Organizations () {
+export default function Organizations ({type}) {
     const [organizations, setOrganizations] = useState([]);
     const [currentPage, setCurrentPage] = useState(1);
-    const [postsPerPage, setPostsPerPage] = useState(3);
+    const postsPerPage = 3;
 
     useEffect(() => {
         const fetchOrganizations = async () => {

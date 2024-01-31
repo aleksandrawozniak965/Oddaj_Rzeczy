@@ -28,7 +28,6 @@ export default function HomeWhoWeHelp () {
     }
 
     return (
-        <>
             <section id="homeWhoWeHelp" className="home_help_container">
                 <div className="title_section">
                     <h3>Komu pomagamy?</h3>
@@ -50,6 +49,5 @@ export default function HomeWhoWeHelp () {
             {showOrganizations && <Organizations />}
             {showCollections && <Collections />}
             </section>
-        </>
     )
 }

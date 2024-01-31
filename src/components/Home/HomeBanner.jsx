@@ -11,7 +11,7 @@ export default function HomeBanner () {
     return (
         <>
             <section className='home'>
-                <div className='banner'></div>
+                <div className='banner'/>
                 <div className='banner-description'>
                     <h1>Zacznij pomagać! <br></br>Oddaj niechciane rzeczy w zaufane ręce</h1>
                     <img src="/src/assets/Decoration.svg" alt='decoration icon' className='decoration_img'/>

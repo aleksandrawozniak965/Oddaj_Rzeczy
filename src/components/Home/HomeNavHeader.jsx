@@ -22,7 +22,6 @@ export default function HomeNavHeader() {
     }
 
     return (
-        <>
             <section className="btn_menu_container">
                 <div>
                     <Button className="btn_registration" onClick={goToLoginPage} >Zaloguj</Button>
@@ -37,6 +36,5 @@ export default function HomeNavHeader() {
                     <Button className="btn_menu" onClick={() => handleButtonClick('homeContact')}>Kontakt</Button>
                 </div>
             </section>
-        </>
     )
 }

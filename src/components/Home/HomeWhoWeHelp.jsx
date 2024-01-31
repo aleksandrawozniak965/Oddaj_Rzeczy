@@ -5,26 +5,11 @@ import Collections from "./Collections.jsx";
 import {useState} from "react";
 
 export default function HomeWhoWeHelp () {
-    const [showFoundations, setShowFoundations] = useState(true);
-    const [showOrganizations, setShowOrganizations] = useState(false);
-    const [showCollections, setShowCollections] = useState(false);
+    const [activeSection, setActiveSection] = useState('foundations');
 
-    function handleToggleFoundations () {
-        setShowFoundations(prevState => !prevState);
-        setShowOrganizations(false);
-        setShowCollections(false);
-    }
 
-    function handleToggleOrganizations () {
-        setShowOrganizations(prevState => !prevState);
-        setShowFoundations(false);
-        setShowCollections(false);
-    }
-
-    function handleToggleCollections() {
-        setShowCollections(prevState => !prevState);
-        setShowFoundations(false);
-        setShowOrganizations(false);
+    function handleToggleSection (section) {
+        setActiveSection(section)
     }
 
     return (
@@ -35,9 +20,9 @@ export default function HomeWhoWeHelp () {
                 </div>
 
                 <div className="btn_help_container">
-                    <Button className="btn_help" onClick={handleToggleFoundations}>Fundacjom</Button>
-                    <Button className="btn_help" onClick={handleToggleOrganizations}>Organizacjom <br/> pozarządowym</Button>
-                    <Button className="btn_help" onClick={handleToggleCollections}>Lokalnym <br/> zbiórką</Button>
+                    <Button className="btn_help" onClick={() => handleToggleSection('foundations')}>Fundacjom</Button>
+                    <Button className="btn_help" onClick={() => handleToggleSection('organizations')}>Organizacjom <br/> pozarządowym</Button>
+                    <Button className="btn_help" onClick={() => handleToggleSection('collections')}>Lokalnym <br/> zbiórką</Button>
                 </div>
 
                 <div className="text_section">
@@ -45,9 +30,9 @@ export default function HomeWhoWeHelp () {
                         którymi współpracujemy. Możesz sprawdzić czym się zajmują, <br/>
                         komu pomagają i czego potrzebują.</p>
                 </div>
-            {showFoundations && <Foundations />}
-            {showOrganizations && <Organizations />}
-            {showCollections && <Collections />}
+            {activeSection === 'foundations' && <Foundations />}
+            {activeSection === 'organizations' && <Organizations />}
+            {activeSection === 'collections' && <Collections />}
             </section>
     )
 }

@@ -1,12 +1,9 @@
 import Button from "../Button.jsx";
-import Foundations from "./Foundations.jsx";
-import Organizations from "./Organizations.jsx";
-import Collections from "./Collections.jsx";
 import {useState} from "react";
+import Partners from "./Partners.jsx";
 
 export default function HomeWhoWeHelp () {
     const [activeSection, setActiveSection] = useState('foundations');
-
 
     function handleToggleSection (section) {
         setActiveSection(section)
@@ -30,9 +27,9 @@ export default function HomeWhoWeHelp () {
                         którymi współpracujemy. Możesz sprawdzić czym się zajmują, <br/>
                         komu pomagają i czego potrzebują.</p>
                 </div>
-            {activeSection === 'foundations' && <Foundations />}
-            {activeSection === 'organizations' && <Organizations />}
-            {activeSection === 'collections' && <Collections />}
+            {activeSection === 'foundations' && <Partners type='Fundacje' />}
+            {activeSection === 'organizations' && <Partners type='Organizacje' />}
+            {activeSection === 'collections' && <Partners type='Zbiórki'/>}
             </section>
     )
 }
